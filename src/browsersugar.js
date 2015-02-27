@@ -59,7 +59,7 @@
 
         for (var i=0; (depth||10) > i && last; i++) {
 
-          if (last && last.className && last.className.indexOf(className) > -1) {
+          if (last && last.className && typeof last.className === "string" && typeof last.className.indexOf === "function" && last.className.indexOf(className) > -1) {
             return last;
           }
 
@@ -77,7 +77,7 @@
           rootNode.appendChild(div.children[0]);
         }
 
-        return rootNode;
+        return div.children[0];
       }
 
     };
