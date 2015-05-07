@@ -6,6 +6,7 @@
     "test": "mocha",
     "start": "gulp && gulp watch"
   },
+  "main" : "./src/browsersugar.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/standardpixel/samesies.git"
